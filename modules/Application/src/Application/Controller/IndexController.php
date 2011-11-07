@@ -3,19 +3,17 @@
 namespace Application\Controller;
 
 use Zend\Mvc\Controller\ActionController;
-	//,DoctrineProvider\Controller\ActionController;
 
-class IndexController extends ActionController
+class IndexController extends \DoctrineProvider\Controller\ActionController
 {
 
-	public function __construct(\Doctrine\ORM\EntityManager $em) {
-		
-	}
     public function indexAction()
     {
-    	
+    
+        $em = new $this->getEntityManager();
+    
         return array();
     }
-	
+
 
 }
