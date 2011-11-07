@@ -10,7 +10,7 @@ class IndexController extends \DoctrineProvider\Controller\ActionController
     public function indexAction()
     {
     
-        $em = new getEntityManager();
+        $em = new $this->getEntityManager();
     
         return array();
     }
