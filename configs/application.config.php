@@ -5,8 +5,7 @@ return array(
     ),
     'modules' => array(
         'Application',
-        'DoctrineProvider',
-        'DoctrineConsumer'
+        'DoctrineProvider'
     ),
     'module_manager_options' => array( 
         'enable_config_cache'      => false,
